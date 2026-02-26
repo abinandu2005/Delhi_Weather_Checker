@@ -1,16 +1,88 @@
-# React + Vite
+🌤 Delhi Weather Checker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React-based weather data viewer that allows users to search historical Delhi weather records by date and optional time using a CSV dataset.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📅 Search weather by date**
 
-## React Compiler
+⏰ Optional time-based filtering
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📊 Displays temperature, humidity, pressure, and condition
 
-## Expanding the ESLint configuration
+🧹 Clear filters button
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⚡ Fast CSV parsing using PapaParse
+
+📱 Responsive table UI
+
+🛠 Tech Stack
+
+--> React (Hooks)
+
+--> PapaParse – CSV parsing
+
+--> CSS – Styling
+
+JavaScript (ES6)
+
+📂 Project Structure
+project-root/
+│
+├── public/
+│   └── testset.csv
+│
+├── src/
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+└── package.json
+📥 Installation & Setup
+1️⃣ Clone the repository
+git clone https://github.com/your-username/delhi-weather-checker.git
+cd delhi-weather-checker
+2️⃣ Install dependencies
+npm install
+3️⃣ Install PapaParse (if not installed)
+npm install papaparse
+4️⃣ Run the project
+npm run dev
+
+App will run at:
+
+http://localhost:5173
+🔍 How It Works
+
+The app fetches the CSV file from the public folder
+
+PapaParse converts CSV → JSON
+
+User selects date/time
+
+Data is filtered using datetime_utc
+
+Matching records are displayed in a table
+
+📝 Input Format
+
+The CSV must contain columns like:
+
+datetime_utc
+
+_conds
+
+_tempm
+
+_hum
+
+_pressurem
+
+Example datetime format:
+
+20130101-00:00
+
+Output:
+<img width="1900" height="1114" alt="Screenshot 2026-02-26 100722" src="https://github.com/user-attachments/assets/9d6f93f5-cadc-4585-ba49-307137802578" />
+
+<img width="1903" height="1107" alt="image" src="https://github.com/user-attachments/assets/77dce3db-2f27-4fbb-bd4c-61545cc5e61d" />
