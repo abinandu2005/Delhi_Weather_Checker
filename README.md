@@ -2,7 +2,7 @@
 
 A simple React-based weather data viewer that allows users to search historical Delhi weather records by date and optional time using a CSV dataset.
 
-🚀 Features
+**🚀 Features**
 
 📅 Search weather by date**
 
@@ -16,7 +16,7 @@ A simple React-based weather data viewer that allows users to search historical 
 
 📱 Responsive table UI
 
-🛠 Tech Stack
+**🛠 Tech Stack**
 
 --> React (Hooks)
 
@@ -24,21 +24,22 @@ A simple React-based weather data viewer that allows users to search historical 
 
 --> CSS – Styling
 
-JavaScript (ES6)
+--> JavaScript (ES6)
 
-📂 Project Structure
+**📂 Project Structure**
 project-root/
 │
 ├── public/
-│   └── testset.csv
+│ └── testset.csv
 │
 ├── src/
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
+│ ├── App.jsx
+│ ├── index.css
+│ └── main.jsx
 │
 └── package.json
-📥 Installation & Setup
+
+**📥 Installation & Setup**
 
 1️⃣ Clone the repository
 git clone https://github.com/your-username/delhi-weather-checker.git
@@ -53,7 +54,8 @@ npm run dev
 App will run at:
 
 http://localhost:5173
-🔍 How It Works
+
+**🔍 How It Works**
 
 The app fetches the CSV file from the public folder
 
@@ -65,7 +67,7 @@ Data is filtered using datetime_utc
 
 Matching records are displayed in a table
 
-📝 Input Format
+**📝 Input Format**
 
 The CSV must contain columns like:
 
@@ -79,7 +81,7 @@ _hum
 
 _pressurem
 
-Example datetime format:
+**Example datetime format:**
 
 20130101-00:00
 
