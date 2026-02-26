@@ -1,4 +1,4 @@
-🌤 Delhi Weather Checker
+**🌤 Delhi Weather Checker**
 
 A simple React-based weather data viewer that allows users to search historical Delhi weather records by date and optional time using a CSV dataset.
 
@@ -39,6 +39,7 @@ project-root/
 │
 └── package.json
 📥 Installation & Setup
+
 1️⃣ Clone the repository
 git clone https://github.com/your-username/delhi-weather-checker.git
 cd delhi-weather-checker
@@ -82,7 +83,7 @@ Example datetime format:
 
 20130101-00:00
 
-Output:
+**Output:**
 <img width="1900" height="1114" alt="Screenshot 2026-02-26 100722" src="https://github.com/user-attachments/assets/9d6f93f5-cadc-4585-ba49-307137802578" />
 
 <img width="1903" height="1107" alt="image" src="https://github.com/user-attachments/assets/77dce3db-2f27-4fbb-bd4c-61545cc5e61d" />
